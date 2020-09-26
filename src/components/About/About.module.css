@@ -1,0 +1,71 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
+  color: white;
+}
+.about h4 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.aboutContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.aboutContainer .image img {
+  height: 25rem;
+}
+.aboutContainer .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+}
+.aboutContainer .text p {
+  padding-bottom: 2rem;
+}
+.aboutContainer .text .skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.aboutContainer .text .skills ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 9rem;
+  margin: 0.3rem;
+  background-color: #5821f1;
+  border-radius: 0.4rem;
+}
+.aboutContainer .text .learning {
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutContainer .text .learning p {
+  padding: 0;
+}
+.aboutContainer .text .learning p:last-child {
+  padding: 1.1rem 2.2rem;
+  background-color: #5821f1;
+  border-radius: 0.4rem;
+  font-weight: 600;
+}
+.educationContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.educationContainer h4 {
+  margin-top: 5rem;
+}

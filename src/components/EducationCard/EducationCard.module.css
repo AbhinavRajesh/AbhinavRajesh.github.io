@@ -1,0 +1,21 @@
+.educationCard {
+  width: 100%;
+  padding: 2rem;
+  background-color: #1f1d26;
+  box-shadow: -1px 0 48px #000000;
+  margin-top: 3rem;
+  border-radius: 0.4rem;
+}
+.degree {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.degree span {
+  color: #5821f1;
+  font-weight: 700;
+}
+.institute,
+.date {
+  font-size: 1.2rem;
+  font-style: italic;
+}

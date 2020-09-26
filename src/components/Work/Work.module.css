@@ -1,0 +1,23 @@
+.works {
+  padding: 5rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.works h4 {
+  font-size: 2.4rem;
+  padding-bottom: 5rem;
+}
+.works button,
+.works .moreGithub {
+  padding: 1.5rem 3rem;
+  background: #5821f1;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
