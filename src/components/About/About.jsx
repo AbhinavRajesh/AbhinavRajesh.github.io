@@ -49,20 +49,22 @@ const About = () => {
       </div>
       <div className={styles.educationContainer}>
         <h4>Education</h4>
-        <EducationCard
-          degree="Higher Secondary Education"
-          major="CS"
-          institute="Saraswathi Vidyanikethan, Elamakkara"
-          from="2017"
-          to="2019"
-        />
-        <EducationCard
-          degree="B-Tech"
-          major="Computer Science Engineering"
-          institute="School Of Engineering, CUSAT"
-          from="2019"
-          to="2023"
-        />
+        <div className={styles.education}>
+          <EducationCard
+            degree="Higher Secondary Education"
+            major="CS"
+            institute="Saraswathi Vidyanikethan, Elamakkara"
+            from="2017"
+            to="2019"
+          />
+          <EducationCard
+            degree="B-Tech"
+            major="Computer Science Engineering"
+            institute="School Of Engineering, CUSAT"
+            from="2019"
+            to="2023"
+          />
+        </div>
       </div>
     </section>
   );

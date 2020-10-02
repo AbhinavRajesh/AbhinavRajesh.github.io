@@ -68,11 +68,22 @@ header {
   flex: 2 1;
 }
 .logo h1 {
-  color: white;
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.logo h1 img {
+  height: 2.4rem;
+}
+nav {
+  flex: 1 2;
+  display: flex;
+  justify-content: flex-end;
 }
 .nav {
   display: none;
+}
+.underline {
+  position: absolute;
 }
 
 .mobile {
@@ -120,4 +131,53 @@ header {
   font-size: 2.4rem;
   cursor: pointer;
   pointer-events: all;
+}
+.bubble {
+  position: absolute;
+  background-color: #5821f1;
+  z-index: -1;
+  border-radius: 0.4rem;
+  /* border-bottom: 0.2rem solid #5821f1; */
+  transform: scale(1.7);
+  transition: all 0.5s ease;
+}
+
+/* Temporary Styling */
+@media screen and (min-width: 768px) {
+  .logo {
+    flex: 3 2;
+  }
+  .logo h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  nav {
+    flex: 2 3;
+  }
+  .nav {
+    display: block;
+    width: 100%;
+  }
+  .nav ul {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .nav ul a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .mobile,
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .bubble {
+    display: none;
+  }
 }

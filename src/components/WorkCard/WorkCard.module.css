@@ -6,7 +6,7 @@
   border-radius: 1rem;
 }
 .image {
-  height: 25rem;
+  min-height: 25rem;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -30,6 +30,7 @@
   margin-bottom: 1rem;
 }
 .text p {
+  padding: 1rem 0;
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -43,20 +44,56 @@
 .text ul li {
   padding: 0.7rem 1.4rem;
   background-color: #5821f1;
-  margin: 0.4rem;
+  margin: 0.4rem 0.4rem 0 0;
   border-radius: 0.4rem;
   font-weight: 600;
 }
 .links {
   margin-top: 1rem;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
 }
 .links a {
-  padding-right: 3rem;
+  text-decoration: none;
+  padding-right: 1rem;
   color: #5821f1;
   font-size: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .workCard {
+    display: flex;
+  }
+  .image {
+    flex: 2 3;
+  }
+  .text {
+    flex: 3 2;
+    padding: 3rem;
+    background-color: transparent;
+    position: unset;
+    align-items: unset;
+  }
+  .text h5 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text h5 {
+    font-size: 2.8rem;
+  }
+  .text p,
+  .text ul {
+    font-size: 1.6rem;
+  }
+  .text ul li {
+    margin: 1rem 1rem 0 0;
+  }
+  .links a {
+    font-size: 3rem;
+  }
 }

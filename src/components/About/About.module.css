@@ -12,6 +12,7 @@
 .aboutContainer {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
 }
 .aboutContainer .image img {
   height: 25rem;
@@ -49,9 +50,10 @@
   width: 100%;
   padding-top: 2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .aboutContainer .text .learning p {
+  margin: 0 1rem;
   padding: 0;
 }
 .aboutContainer .text .learning p:last-child {
@@ -68,4 +70,58 @@
 }
 .educationContainer h4 {
   margin-top: 5rem;
+}
+
+@media screen and (min-width: 650px) {
+  .about {
+    padding: 0 7rem;
+  }
+  .aboutContainer .image img {
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 0 10rem;
+  }
+  .aboutContainer .image img {
+    height: 35rem;
+  }
+  .about h4 {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+  }
+  .text p {
+    font-size: 1.8rem;
+  }
+  .skills ul li {
+    font-size: 1.8rem !important;
+    width: 15rem !important;
+  }
+}
+@media screen and (min-width: 860px) {
+  .aboutContainer .image img {
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .aboutContainer {
+    flex-direction: row;
+  }
+  .education {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about h4 {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .text p {
+    font-size: 2rem;
+  }
+  .skills ul li {
+    font-size: 2rem !important;
+  }
 }

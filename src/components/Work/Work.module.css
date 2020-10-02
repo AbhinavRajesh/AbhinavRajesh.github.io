@@ -21,3 +21,17 @@
   font-weight: 600;
   text-decoration: none;
 }
+
+@media screen and (min-width: 768px) {
+  .works {
+    padding: 5rem 10rem 0 10rem;
+  }
+  .works h4 {
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+  }
+  .works button,
+  .works .moreGithub {
+    font-size: 1.8rem;
+  }
+}

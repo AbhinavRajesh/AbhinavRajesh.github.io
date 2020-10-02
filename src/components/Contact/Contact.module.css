@@ -1,11 +1,35 @@
 .contact {
-  padding: 5rem 3rem 0 3rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
 .contact h4 {
   font-size: 2.4rem;
   padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 5rem 10rem;
+  }
+  .contact h4 {
+    font-size: 3.2rem;
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }

@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <section id="footer" className={styles.footer}>
+    <footer id="footer" className={styles.footer}>
       <div className={styles.socialLinks}>
         <a
           href="https://in.linkedin.com/in/abhinav-rajesh-44b71b172"
@@ -38,11 +38,11 @@ const Footer = () => {
           <i className="fab fa-twitter"></i>
         </a>
       </div>
-      <h6>Copyright &copy; | Abhinav Rajesh</h6>
+      <h6>&copy; Copyright 2020, Abhinav Rajesh</h6>
       <h6>
         Made with <span>&hearts;</span> from Scratch
       </h6>
-    </section>
+    </footer>
   );
 };
 
