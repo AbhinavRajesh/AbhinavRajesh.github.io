@@ -53,7 +53,7 @@
   justify-content: center;
 }
 .aboutContainer .text .learning p {
-  margin: 0 1rem;
+  margin: 0 0.2rem;
   padding: 0;
 }
 .aboutContainer .text .learning p:last-child {
@@ -98,6 +98,9 @@
     font-size: 1.8rem !important;
     width: 15rem !important;
   }
+  .aboutContainer .text .learning p {
+    margin: 0 1rem;
+  }
 }
 @media screen and (min-width: 860px) {
   .aboutContainer .image img {
@@ -123,5 +126,11 @@
   }
   .skills ul li {
     font-size: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .aboutContainer .image img {
+    height: 45rem;
   }
 }

@@ -12,16 +12,16 @@ const WorkCard = ({ project }) => {
         <h5>{project.name}</h5>
         <p>{project.description}</p>
         <ul>
-          {project.Tech.map((tech) => (
-            <li>{tech}</li>
+          {project.Tech.map((tech, index) => (
+            <li key={index}>{tech}</li>
           ))}
         </ul>
         <div className={styles.links}>
           <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </a>
           <a href={project.web} target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-external-link-alt"></i>
+            <i className="fas fa-external-link-alt"></i>
           </a>
         </div>
       </div>

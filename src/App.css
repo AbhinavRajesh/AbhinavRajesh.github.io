@@ -31,9 +31,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1920px) {
   .App {
-    width: 1600px;
+    width: 1920px;
     left: 50%;
     transform: translate(-50%, 0);
   }

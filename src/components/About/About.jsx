@@ -1,18 +1,62 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { gsap, Power3 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import styles from "./About.module.css";
 
 import EducationCard from "../EducationCard/EducationCard";
-import styles from "./About.module.css";
 import image from "../../assets/About Image.svg";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
+  let aboutRef = useRef(null);
+  let aboutContainer = useRef(null);
+  let aboutContainerText = useRef(null);
+  let educationContainer = useRef(null);
+  useEffect(() => {
+    gsap.from([aboutContainer.children, aboutContainerText.children], {
+      duration: 1,
+      y: "50px",
+      opacity: 0,
+      ease: Power3.easeOut,
+      stagger: 0.2,
+      delay: 0.15,
+      scrollTrigger: {
+        trigger: aboutRef,
+        start: "top 30%",
+      },
+    });
+    gsap.from(
+      [
+        educationContainer.children[1].children[0],
+        educationContainer.children[1].children[1],
+      ],
+      {
+        duration: 1,
+        y: "50px",
+        opacity: 0,
+        ease: Power3.easeOut,
+        stagger: 0.3,
+        delay: 0.15,
+        scrollTrigger: {
+          trigger: educationContainer,
+          start: "top 60%",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section id="about" className={styles.about}>
+    <section id="about" className={styles.about} ref={(el) => (aboutRef = el)}>
       <h4>About Me</h4>
-      <div className={styles.aboutContainer}>
+      <div
+        className={styles.aboutContainer}
+        ref={(el) => (aboutContainer = el)}
+      >
         <div className={styles.image}>
           <img src={image} alt="about" />
         </div>
-        <div className={styles.text}>
+        <div className={styles.text} ref={(el) => (aboutContainerText = el)}>
           <p>
             I am a budding developer based in India. Web development has
             transformed from a spark of interest to an all out passion and an
@@ -47,7 +91,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className={styles.educationContainer}>
+      <div
+        className={styles.educationContainer}
+        ref={(el) => (educationContainer = el)}
+      >
         <h4>Education</h4>
         <div className={styles.education}>
           <EducationCard

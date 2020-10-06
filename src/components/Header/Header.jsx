@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "./Header.module.css";
 
 import useWindowHeight from "../../hooks/useWindowSize";
 import logo from "../../assets/AR Logo.svg";
 
+console.log(
+  "%c Abhinav Rajesh Portfolio",
+  "background-color: #5821f1; color: white; font-weight: 600; font-family: Montserrat; font-size: 14px; padding: 10px 20px; border-radius: 4px"
+);
+
 const Header = () => {
-  // const [mode, setMode] = useState(false);
-  // const darkMode = () => {
-  //   setMode((prevMode) => !prevMode);
-  // };
   const size = useWindowHeight();
   const openNav = () => {
     document.getElementById("sideNav").style.width = "20rem";
@@ -43,6 +44,16 @@ const Header = () => {
         top: coords.top,
         left: coords.left,
       };
+      if (size.width < 768) {
+        if (classname !== "Home_home__1T33S")
+          document
+            .querySelector(".Header_toTop__kYk4T")
+            .style.setProperty("display", "flex");
+        else
+          document
+            .querySelector(".Header_toTop__kYk4T")
+            .style.setProperty("display", "none");
+      }
       if (entry.isIntersecting) {
         const bubble = document.querySelector(".Header_bubble__17SEf");
         bubble.style.setProperty("left", `${directions.left}px`);
@@ -50,7 +61,6 @@ const Header = () => {
         bubble.style.setProperty("height", `${directions.height}px`);
         bubble.style.setProperty("width", `${directions.width}px`);
       }
-      console.log(classname);
     });
   };
 
@@ -64,7 +74,13 @@ const Header = () => {
     <header id="header">
       <div className={styles.logo}>
         <h1>
-          <img src={logo} alt="Abhinav Rajesh" />
+          <img
+            onClick={(e) => {
+              navigate(0);
+            }}
+            src={logo}
+            alt="Abhinav Rajesh"
+          />
         </h1>
       </div>
       <nav>
@@ -160,12 +176,9 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-
-      {/* <label className={styles.switch}>
-        <input type="checkbox" onClick={darkMode} />
-        <span className={styles.slider}></span>
-      </label>
-      <p>{mode ? "Dark" : "Light"} Mode</p> */}
+      <div className={styles.toTop} onClick={() => navigate(0)}>
+        <i className="fas fa-chevron-up fa-2x"></i>
+      </div>
     </header>
   );
 };

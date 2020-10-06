@@ -40,7 +40,11 @@ const Footer = () => {
       </div>
       <h6>&copy; Copyright 2020, Abhinav Rajesh</h6>
       <h6>
-        Made with <span>&hearts;</span> from Scratch
+        Made with
+        <span>
+          <i className="fas fa-heart"></i>
+        </span>
+        from Scratch
       </h6>
     </footer>
   );
