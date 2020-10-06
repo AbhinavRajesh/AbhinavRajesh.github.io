@@ -4,13 +4,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WorkCard from "../WorkCard/WorkCard";
 
 import styles from "./Work.module.css";
-import image1 from "../../assets/testImage.jpg";
+import covidTracker from "../../assets/covid-19-tracker.png";
+import octoFetch from "../../assets/octofetch.png";
+import jensonUsa from "../../assets/jensonUSA.png";
+import weatherPWA from "../../assets/weather-pwa.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    image: image1,
+    image: covidTracker,
     name: "COVID-19 Tracker",
     description:
       "This is a COVID-19 Tracker built using ReactJS Library and Hosted using Firebase",
@@ -19,7 +22,7 @@ const projects = [
     web: "https://covid19trackerbyar.web.app",
   },
   {
-    image: image1,
+    image: octoFetch,
     name: "OctoFetch",
     description: "A nicer look at the GitHub Profile",
     Tech: ["ReactJS", "Firebase Hosting", "GitHub API", "JavaScript"],
@@ -27,13 +30,21 @@ const projects = [
     web: "https://octofetch.web.app",
   },
   {
-    image: image1,
+    image: jensonUsa,
     name: "JensonUSA",
     description:
-      "This project is a recreation of the website JensonUSA with more focus on Mountain, BMX and Electric Bikes.",
+      "This project is a recreation of the E-commerce website JensonUSA with more focus on Mountain, BMX and Electric Bikes.",
     Tech: ["ReactJS", "Firebase Hosting", "JavaScript"],
     github: "https://github.com/AbhinavRajesh/E-commerce-bike",
     web: "https://jensonusabyar.web.app",
+  },
+  {
+    image: weatherPWA,
+    name: "Weather PWA App",
+    description: "A Progressive Web App for Weather Information",
+    Tech: ["ReactJS", "Firebase Hosting", "Openweathermap API", "JavaScript"],
+    github: "https://github.com/AbhinavRajesh/Weather-PWA-App",
+    web: "https://weatherpwabyar.web.app/",
   },
 ];
 
@@ -71,9 +82,7 @@ const Work = ({ changeHeight }) => {
       <WorkCard project={projects[2]} />
       {more ? (
         <>
-          <WorkCard project={projects[0]} />
-          <WorkCard project={projects[1]} />
-          <WorkCard project={projects[2]} />
+          <WorkCard project={projects[3]} />
           <a
             href="https://github.com/AbhinavRajesh"
             target="_blank"

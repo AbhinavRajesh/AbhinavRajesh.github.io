@@ -18,9 +18,11 @@ const WorkCard = ({ project }) => {
         </ul>
         <div className={styles.links}>
           <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <p>Source Code</p>
             <i className="fab fa-github"></i>
           </a>
           <a href={project.web} target="_blank" rel="noopener noreferrer">
+            <p>Live Preview</p>
             <i className="fas fa-external-link-alt"></i>
           </a>
         </div>
