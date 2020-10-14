@@ -35,7 +35,7 @@ const App = () => {
       setLoading(false);
       setHideHeader(false);
       setHeight();
-    }, 5000);
+    }, 4000);
     requestAnimationFrame(() => skewScrolling());
   }, []);
 

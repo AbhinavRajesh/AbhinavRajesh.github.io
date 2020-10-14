@@ -47,8 +47,8 @@ const Home = () => {
     );
   }, []);
 
-  const navigateToWorks = () => {
-    let scroll = document.getElementById("works").offsetTop;
+  const navigateTo = (to) => {
+    let scroll = document.getElementById(to).offsetTop;
     window.scrollTo(0, scroll);
   };
   return (
@@ -98,12 +98,21 @@ const Home = () => {
             href="#works"
             onClick={(e) => {
               e.preventDefault();
-              navigateToWorks();
+              navigateTo("works");
             }}
           >
             SEE MY WORKS
           </a>
-          <a href="https://abhinavrajesh.me">DOWNLOAD CV</a>
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo("contact");
+            }}
+          >
+            CONTACT ME
+          </a>
+          {/* <a href="https://abhinavrajesh.me">DOWNLOAD CV</a> */}
         </div>
       </div>
       <div className={styles.image} ref={(el) => (landingImage = el)}>

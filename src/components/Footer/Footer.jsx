@@ -44,7 +44,6 @@ const Footer = () => {
         <span>
           <i className="fas fa-heart"></i>
         </span>
-        from Scratch
       </h6>
     </footer>
   );

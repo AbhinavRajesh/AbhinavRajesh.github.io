@@ -87,7 +87,7 @@ const About = () => {
           </div>
           <div className={styles.learning}>
             <p>I'm currently learning</p>
-            <p>React Native</p>
+            <p>Flutter</p>
           </div>
         </div>
       </div>
