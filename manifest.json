@@ -1,0 +1,25 @@
+{
+  "short_name": "Abhinav Rajesh",
+  "name": "Abhinav Rajesh | Portfolio",
+  "icons": [
+    {
+      "src": "AR Logo.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "AR Logo.svg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "AR Logo.svg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
