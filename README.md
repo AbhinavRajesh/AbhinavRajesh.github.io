@@ -22,6 +22,12 @@
  <img src="./src/assets/demo.png" alt="demo" />
 </p>
 
+## 🚨 Forking this repo (please read!)
+
+Yes, you can fork this repo. 
+Please give me proper credit by linking back to [abhinavrajesh.me](https://abhinavrajesh.me) Also giving my repo a star ⭐ would be highly appreciated😊.
+
+
 
 ## 🛠 Installation & Set Up
 
@@ -52,6 +58,7 @@
    ```sh
    npm start
    ```
+   
    
 ## 🎨 Color Reference
 
