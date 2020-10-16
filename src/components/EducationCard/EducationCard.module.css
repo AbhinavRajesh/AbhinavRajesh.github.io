@@ -1,7 +1,8 @@
 .educationCard {
   width: 100%;
   padding: 2rem;
-  background-color: #1f1d26;
+  /* background-color: #1f1d26; May change back to this*/
+  background-color: #171420;
   box-shadow: -1px 0 48px #000000;
   margin-top: 3rem;
   border-radius: 0.4rem;
