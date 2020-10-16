@@ -16,15 +16,18 @@
         <img src="https://img.shields.io/circleci/project/github/badges/shields.svg" alt="build status">
       </a>
  </p>
+-->
 
 <p align="center">
-  <img src="" />
- </p>
- -->
+ <img src="./src/assets/demo.png" alt="demo" />
+</p>
 
 ## 🚨 Forking this repo (please read!)
 
-Yes, you can fork this repo. Please give me proper credit by linking back to [abhinavrajesh.me](https://abhinavrajesh.me). Thanks!
+Yes, you can fork this repo. 
+Please give me proper credit by linking back to [abhinavrajesh.me](https://abhinavrajesh.me) Also giving my repo a star ⭐ would be highly appreciated😊.
+
+
 
 ## 🛠 Installation & Set Up
 
@@ -55,6 +58,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [ab
    ```sh
    npm start
    ```
+   
    
 ## 🎨 Color Reference
 
