@@ -23,7 +23,7 @@ const About = () => {
       delay: 0.15,
       scrollTrigger: {
         trigger: aboutRef,
-        start: "top 30%",
+        start: "top 40%",
       },
     });
     gsap.from(
@@ -40,7 +40,7 @@ const About = () => {
         delay: 0.15,
         scrollTrigger: {
           trigger: educationContainer,
-          start: "top 60%",
+          start: "top 40%",
         },
       }
     );

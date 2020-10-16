@@ -60,7 +60,7 @@ const App = () => {
     const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 5;
+    const skew = velocity * 7;
 
     scrollContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px) skewY(${skew}deg)`;
     requestAnimationFrame(() => skewScrolling());

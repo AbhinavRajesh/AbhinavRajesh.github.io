@@ -20,7 +20,7 @@ const Contact = () => {
       delay: 0.15,
       scrollTrigger: {
         trigger: contactRef,
-        start: "top 60%",
+        start: "top 55%",
       },
     });
   }, []);

@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap, Power3 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import styles from "./WorkCard.module.css";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const WorkCard = ({ project }) => {
+  let workCardRef = useRef(null);
+  useEffect(() => {
+    gsap.from(workCardRef, {
+      duration: 2,
+      y: "50px",
+      opacity: 0,
+      ease: Power3.easeOut,
+      scrollTrigger: {
+        trigger: workCardRef,
+        start: "top 55%"
+      }
+    })
+  }, [])
   return (
-    <div className={styles.workCard}>
+    <div className={styles.workCard} ref={el => workCardRef = el}>
       <div
         className={styles.image}
         style={{ backgroundImage: `url(${project.image})` }}

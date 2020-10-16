@@ -1,6 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
-import { gsap, Power3 } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useState } from "react";
 import WorkCard from "../WorkCard/WorkCard";
 
 import styles from "./Work.module.css";
@@ -9,7 +7,6 @@ import octoFetch from "../../assets/octofetch.png";
 import jensonUsa from "../../assets/jensonUSA.png";
 import weatherPWA from "../../assets/weather-pwa.png";
 
-gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
@@ -49,24 +46,6 @@ const projects = [
 ];
 
 const Work = ({ changeHeight }) => {
-  let worksRef = useRef(null);
-  useEffect(() => {
-    gsap.from(
-      [worksRef.children[1], worksRef.children[2], worksRef.children[3]],
-      {
-        duration: 3,
-        y: "50px",
-        opacity: 0,
-        ease: Power3.easeOut,
-        stagger: 0.2,
-        delay: 0.15,
-        scrollTrigger: {
-          trigger: worksRef,
-          start: "top 40%",
-        },
-      }
-    );
-  }, []);
   const [more, setMore] = useState(false);
   const showMore = () => {
     setMore(true);
@@ -75,7 +54,7 @@ const Work = ({ changeHeight }) => {
     }, 100);
   };
   return (
-    <section id="works" className={styles.works} ref={(el) => (worksRef = el)}>
+    <section id="works" className={styles.works} >
       <h4>Works</h4>
       <WorkCard project={projects[0]} />
       <WorkCard project={projects[1]} />
