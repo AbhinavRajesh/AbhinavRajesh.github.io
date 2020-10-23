@@ -37,13 +37,8 @@ Please give me proper credit by linking back to [abhinavrajesh.me](https://abhin
    npm install -g create-react-app
    ```
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-   ```sh
-   nvm install
-   ```
-
-3. Install dependencies
+2. Install dependencies
    Using Yarn
    ```sh
    yarn
@@ -53,7 +48,7 @@ Please give me proper credit by linking back to [abhinavrajesh.me](https://abhin
    npm i
    ```
 
-4. Start the development server
+3. Start the development server
 
    ```sh
    npm start
