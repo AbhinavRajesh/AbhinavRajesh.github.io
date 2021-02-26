@@ -5,7 +5,7 @@
   abhinavrajesh.xyz - v2
 </h1>
 <p align="center">
-  Second Iteration of <a href="https://AbhinavRajesh.github.io" target="_blank">abhinavrajesh.me</a> built with <a href="https://www.reactjs.org/" target="_blank">React</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+  Second Iteration of <a href="https://AbhinavRajesh.github.io" target="_blank">abhinavrajesh.xyz</a> built with <a href="https://www.reactjs.org/" target="_blank">React</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
 </p>
 <p align="center">
   Previous iterations:
