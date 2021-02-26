@@ -2,7 +2,7 @@
   <img height=50 src="./src/assets/AR Logo.svg" />
 </p>
 <h1 align="center">
-  abhinavrajesh.me - v2
+  abhinavrajesh.xyz - v2
 </h1>
 <p align="center">
   Second Iteration of <a href="https://AbhinavRajesh.github.io" target="_blank">abhinavrajesh.me</a> built with <a href="https://www.reactjs.org/" target="_blank">React</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
